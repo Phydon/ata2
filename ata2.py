@@ -20,6 +20,7 @@ ctk.set_default_color_theme(
 )  # Themes: "blue" (standard), "green", "dark-blue"
 
 
+# TODO
 # class Window(Frame):
 #     def __init__(self, master=None):
 #         Frame.__init__(self, master)
@@ -309,6 +310,7 @@ class App(ctk.CTk):
         )
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
+        # TODO
         # create main entry and button
         self.entry = ctk.CTkEntry(self, placeholder_text="Enter data here")
         self.entry.grid(
@@ -320,6 +322,7 @@ class App(ctk.CTk):
             sticky="nsew",
         )
 
+        # TODO
         self.main_button_1 = ctk.CTkButton(
             master=self,
             fg_color="transparent",
@@ -331,6 +334,7 @@ class App(ctk.CTk):
             row=3, column=2, padx=(20, 20), pady=(20, 20), sticky="nsew"
         )
 
+        # TODO
         self.string_input_button = ctk.CTkButton(
             self,
             text="Open CTkInputDialog",
@@ -343,6 +347,7 @@ class App(ctk.CTk):
         )
         self.firstBreakButton.grid(row=2, column=1, padx=20, pady=20)
 
+        # TODO
         # output label
         self.output_label = ctk.CTkLabel(master=self, text="")
         self.output_label.grid(row=1, column=1, padx=20, pady=20, sticky="nsew")
@@ -372,6 +377,7 @@ class App(ctk.CTk):
         self.progressbar_1.start()
 
     def open_input_dialog_event(self):
+        # TODO
         dialog = ctk.CTkInputDialog(
             text="Type in a number:", title="CTkInputDialog"
         )
@@ -385,11 +391,13 @@ class App(ctk.CTk):
         ctk.set_widget_scaling(new_scaling_float)
 
     def button_event(self):
+        # TODO
         print("Click")
 
     def get_current_time(self):
         date = dt.datetime.now().strftime("%H:%M")
-        self.breakone.set(date)
+        # TODO
+        # self.breakone.set(date)
         current_text = self.output_label.cget("text")
         new_text = current_text + date + "\n"
         self.output_label.configure(text=new_text)
